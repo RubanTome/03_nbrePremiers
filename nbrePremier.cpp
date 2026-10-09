@@ -15,7 +15,6 @@
 
 #include <iostream>
 #include <cstdlib>
-#include <cmath>
 #include <limits>
 #include <iomanip>
 using namespace std;
@@ -32,8 +31,10 @@ int main () {
     do {
 
         int limite = 2;
+        cout << "Ce programme ..." << endl;
+        cout << endl;
 
-        // Vérifie l'entré utilisateur pour la limite
+        // Vérifie l'entrée utilisateur pour la limite
         do {
 
             cout << "Entrer une valeur [2-1000] : ";
@@ -59,7 +60,7 @@ int main () {
 
             // Si aucun diviseur n'a été trouvé
             if (estPremier) {
-                cout << setw(5) << i;
+                cout << setw(10) << i;
                 compteurNbCln++;
             }
 
@@ -72,7 +73,7 @@ int main () {
 
         cout << endl;
 
-        // Vérifie l'entré utilisateur pour recommencer ou pas le programme
+        // Vérifie l'entrée utilisateur pour recommencer ou pas le programme
         do {
 
             cout << "Voulez-vous recommencer [O/N] : ";
